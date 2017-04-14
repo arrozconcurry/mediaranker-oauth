@@ -26,8 +26,8 @@ Following the steps in the Textbook curriculum, add OAuth to your Media Ranker A
 ## Wave 2: User Authorization
 
 **Requirements:**
--  Ensure that users who are not logged in see *only* the main page with the spotlight and top 10 items. No other pages should be viewable by the guest user.  
--  Ensure that Users who are logged in see the rest of the pages.  
+-  Ensure that users who are not logged in can see *only* the main page with the spotlight and top 10 items. No other pages should be viewable by the guest user.
+-  Ensure that users who are logged in can see the rest of the pages.
 
 
 ## Wave 3: Modifying The "Created By"
