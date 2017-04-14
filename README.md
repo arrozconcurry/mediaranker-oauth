@@ -5,7 +5,7 @@
 - Practice using Session Variables to track a user across multiple HTTP requests
 
 ## Exercise Description
-Our Media Ranker web app was a wonderful starter app, but the way we implemented user login is extremely insecure.  In this assignment you will modify Media Ranker so that it can securely log in multiple users to allow us to track users and their corresponding votes.
+Our Media Ranker web app was a wonderful website with one major flaw: the way we implemented user login is extremely insecure.  In this assignment you will modify Media Ranker so that it can securely **authenticate** multiple users via OAuth and **authorize** them to view, manage and vote on works.
 
 Build your project using _branches_, with at least _one branch_ per wave.  As you finish a wave merge the changes into the main branch. You shall submit one pull request at the end once you are complete.
 
