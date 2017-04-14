@@ -33,10 +33,10 @@ Following the steps in the Textbook curriculum, add OAuth to your Media Ranker A
 ## Wave 3: Modifying The "Created By"
 
 **Requirements:**
-- Modify the database and/or model to create a relationship between the User and the Work.
-- Modify the creation functionality to automatically associate the logged in user when creating a new work (instead of manually assigning the field "created by").
-- Modify the delete functionality to ensure that users can only delete items they have created themselves.
-
+- Modify the database and/or model to create a relationship between `User` and `Work`.
+- Modify the creation functionality to automatically associate the logged in user when creating a new work.
+- Modify the edit and delete functionality to ensure that users can only change works they are associated with.
+  - Optional: Consider how this could be implemented at the model layer.
 
 ## Wave 4: Optional
 Do some research into how to use Google or another OAuth provider for authentication and use that provider.   
