@@ -43,8 +43,6 @@ In this wave we'll create advanced authorization logic to enforce rules that gov
   - Delete that work
 
 **Requirements:**
-- Modify the database and/or model to create a relationship between `User` and `Work`.
-- Modify the creation functionality to automatically associate the logged in user when creating a new work.
 - Modify the edit and delete functionality to ensure that users can only change works they are associated with.
   - Optional: Consider how this could be implemented at the model layer.
 
