@@ -7,9 +7,9 @@
 ## Exercise Description
 Our Media Ranker web app was a wonderful starter app, but the way we implemented user login is extremely insecure.  In this assignment you will modify Media Ranker so that it can securely log in multiple users to allow us to track users and their corresponding votes.
 
-Build your project using _branches_, with at least _one branch_ per phase.  As you finish a phase merge the changes into the main branch. You shall submit one pull request at the end once you are complete.
+Build your project using _branches_, with at least _one branch_ per wave.  As you finish a wave merge the changes into the main branch. You shall submit one pull request at the end once you are complete.
 
-## Phase 1: Setting up OAuth
+## Wave 1: Setting up OAuth
 
 Following the steps in the Textbook curriculum, add OAuth to your Media Ranker Application and enable a user to log in.
 
@@ -23,14 +23,14 @@ Following the steps in the Textbook curriculum, add OAuth to your Media Ranker A
   - `User` model
 
 
-## Phase 2: User Authorization
+## Wave 2: User Authorization
 
 **Requirements:**
 -  Ensure that users who are not logged in see *only* the main page with the spotlight and top 10 items. No other pages should be viewable by the guest user.  
 -  Ensure that Users who are logged in see the rest of the pages.  
 
 
-## Phase 3: Modifying The "Created By"
+## Wave 3: Modifying The "Created By"
 
 **Requirements:**
 - Modify the database and/or model to create a relationship between the User and the Work.
@@ -38,7 +38,7 @@ Following the steps in the Textbook curriculum, add OAuth to your Media Ranker A
 - Modify the delete functionality to ensure that users can only delete items they have created themselves.
 
 
-## Phase 4: Optional
+## Wave 4: Optional
 Do some research into how to use Google or another OAuth provider for authentication and use that provider.   
 
 ## Resources
