@@ -25,12 +25,22 @@ Following the steps in the Textbook curriculum, add OAuth to your Media Ranker A
 
 ## Wave 2: Basic Authorization (Page Access)
 
+In this wave we will create authorization logic to enforce rules that govern what pages on the site users and guests (unauthenticated browsers) can view. The rule we'll use is that guests can only access the main page, and all logged-in users can access the show and index pages for all categories of work.
+
 **Requirements:**
 -  Ensure that users who are not logged in can see *only* the main page with the spotlight and top 10 items. No other pages should be viewable by the guest user.
 -  Ensure that users who are logged in can see the rest of the pages.
 
 
 ## Wave 3: Advanced Authorization (Ownership)
+
+In this wave we'll create advanced authorization logic to enforce rules that govern what _changes_ users can make to the site's data. The rules here are more complex than for accessing pages:
+- Guests cannot change any data on the site
+- All users can add new works to the site
+  - Those works are owned by the user that created them
+- The user who owns a given work can:
+  - Edit that work
+  - Delete that work
 
 **Requirements:**
 - Modify the database and/or model to create a relationship between `User` and `Work`.
