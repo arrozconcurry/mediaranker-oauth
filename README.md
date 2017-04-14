@@ -36,7 +36,7 @@ In this wave we will create authorization logic to enforce rules that govern wha
 
 In this wave we'll create advanced authorization logic to enforce rules that govern what _changes_ users can make to the site's data. The rules here are more complex than for accessing pages:
 - Guests cannot change any data on the site
-- All users can add new works to the site
+- All logged-in users can add new works to the site
   - Those works are owned by the user that created them
 - The user who owns a given work can:
   - Edit that work
