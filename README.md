@@ -9,7 +9,7 @@ Our Media Ranker web app was a wonderful website with one major flaw: the way we
 
 Build your project using _branches_, with at least _one branch_ per wave.  As you finish a wave merge the changes into the main branch. You shall submit one pull request at the end once you are complete.
 
-## Wave 1: Setting up OAuth
+## Wave 1: Authentication via OAuth
 
 Following the steps in the Textbook curriculum, add OAuth to your Media Ranker Application and enable a user to log in.
 
@@ -23,14 +23,14 @@ Following the steps in the Textbook curriculum, add OAuth to your Media Ranker A
   - `User` model
 
 
-## Wave 2: User Authorization
+## Wave 2: Basic Authorization (Page Access)
 
 **Requirements:**
 -  Ensure that users who are not logged in can see *only* the main page with the spotlight and top 10 items. No other pages should be viewable by the guest user.
 -  Ensure that users who are logged in can see the rest of the pages.
 
 
-## Wave 3: Modifying The "Created By"
+## Wave 3: Advanced Authorization (Ownership)
 
 **Requirements:**
 - Modify the database and/or model to create a relationship between `User` and `Work`.
