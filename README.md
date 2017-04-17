@@ -5,11 +5,11 @@
 - Practice using Session Variables to track a user across multiple HTTP requests
 
 ## Exercise Description
-Our Media Ranker web app was a wonderful starter app, but the way we implemented user login is extremely insecure.  In this assignment you will modify Media Ranker so that it can securely log in multiple users to allow us to track users and their corresponding votes.
+Our Media Ranker web app was a wonderful website with one major flaw: the way we implemented user login is extremely insecure.  In this assignment you will modify Media Ranker so that it can securely **authenticate** multiple users via OAuth and **authorize** them to view, manage and vote on works.
 
-Build your project using _branches_, with at least _one branch_ per phase.  As you finish a phase merge the changes into the main branch. You shall submit one pull request at the end once you are complete.
+Build your project using _branches_, with at least _one branch_ per wave.  As you finish a wave merge the changes into the main branch. You shall submit one pull request at the end once you are complete.
 
-## Phase 1: Setting up OAuth
+## Wave 1: Authentication via OAuth
 
 Following the steps in the Textbook curriculum, add OAuth to your Media Ranker Application and enable a user to log in.
 
@@ -23,22 +23,30 @@ Following the steps in the Textbook curriculum, add OAuth to your Media Ranker A
   - `User` model
 
 
-## Phase 2: User Authorization
+## Wave 2: Basic Authorization (Page Access)
+
+In this wave we will create authorization logic to enforce rules that govern what pages on the site users and guests (unauthenticated browsers) can view. The rule we'll use is that guests can only access the main page, and all logged-in users can access the show and index pages for all categories of work.
 
 **Requirements:**
--  Ensure that users who are not logged in see *only* the main page with the spotlight and top 10 items. No other pages should be viewable by the guest user.  
--  Ensure that Users who are logged in see the rest of the pages.  
+-  Ensure that users who are not logged in can see *only* the main page with the spotlight and top 10 items. No other pages should be viewable by the guest user.
+-  Ensure that users who are logged in can see the rest of the pages.
 
 
-## Phase 3: Modifying The "Created By"
+## Wave 3: Advanced Authorization (Ownership)
+
+In this wave we'll create advanced authorization logic to enforce rules that govern what _changes_ users can make to the site's data. The rules here are more complex than for accessing pages:
+- Guests cannot change any data on the site
+- All logged-in users can add new works to the site
+  - Those works are owned by the user that created them
+- The user who owns a given work can:
+  - Edit that work
+  - Delete that work
 
 **Requirements:**
-- Modify the database and/or model to create a relationship between the User and the Work.
-- Modify the creation functionality to automatically associate the logged in user when creating a new work (instead of manually assigning the field "created by").
-- Modify the delete functionality to ensure that users can only delete items they have created themselves.
+- Modify the edit and delete functionality to ensure that users can only change works they are associated with.
+  - Optional: Consider how this could be implemented at the model layer.
 
-
-## Phase 4: Optional
+## Wave 4: Optional
 Do some research into how to use Google or another OAuth provider for authentication and use that provider.   
 
 ## Resources
