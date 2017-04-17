@@ -9,6 +9,8 @@ Our Media Ranker web app was a wonderful website with one major flaw: the way we
 
 Build your project using _branches_, with at least _one branch_ per wave.  As you finish a wave merge the changes into the main branch. You shall submit one pull request at the end once you are complete.
 
+For this project, you should use [the instructor version of MediaRanker](https://github.com/Ada-C7/instructor-media-ranker).
+
 ## Wave 1: Authentication via OAuth
 
 Following the steps in the Textbook curriculum, add OAuth to your Media Ranker Application and enable a user to log in.
