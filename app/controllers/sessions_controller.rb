@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
                         oauth_uid: auth_hash["uid"])
     if user.nil?
       # Don't know this uder - Build a new user
-      user = User.from_github(auth_hash)
+      user = User.from_github(auth_hash) || user = User.from_google(auth_hash)
       if user.save
         session[:user_id] = user.id
         flash[:success] = "Successfully logged in as new user #{user.username}"

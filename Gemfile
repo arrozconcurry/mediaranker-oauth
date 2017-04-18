@@ -55,6 +55,7 @@ end
 # Oauth
 gem "omniauth"
 gem "omniauth-github"
+gem "omniauth-google-oauth2"
 
 group :test do
   gem 'minitest-rails'
