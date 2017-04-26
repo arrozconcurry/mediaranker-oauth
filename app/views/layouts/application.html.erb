@@ -23,7 +23,8 @@
         <%= link_to "Log Out", "/logout", class: "button float-right" %>
       <% else %>
         <p class="text-right">Not logged in</p>
-        <%= link_to "Log In", "/auth/google_oauth2", class: "button float-right" %>
+        <%= link_to "Log In Github", "/auth/github", class: "button float-right" %>
+        <%= link_to "Log In Google", "/auth/google_oauth2", class: "button float-right" %>
       <% end %>
     </div>
   </header>
